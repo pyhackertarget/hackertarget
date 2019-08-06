@@ -3,8 +3,8 @@
 from setuptools import setup
 
 setup(name='hackertarget',
-      version='1.4',
-      description='HackerTarget',
+      version='0.1',
+      description='Hacker Target',
       url='https://github.com/ismailtasdelen/hackertarget',
       author='İSMAİL TAŞDELEN',
       author_email='pentestdatabase@gmail.com',
