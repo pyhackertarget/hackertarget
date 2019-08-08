@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import requests
+from source import hackertarget_api
 
 hackertarget_logo = """
   _               _              _                          _
@@ -31,161 +31,133 @@ menu = """
 [15] Exit
 """
 
-print hackertarget_logo
-print menu
+print(hackertarget_logo)
+print(menu)
 
 def run():
 
     try:
         choice = input("Which option number : ")
 
-        if choice == 1:
+        if choice == '1':
             print("\n")
             print("[+] Traceroute script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/mtr/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(1, target)
             print(txt)
 
-        elif choice == 2:
+        elif choice == '2':
             print("\n")
             print("[+] Ping Test script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/nping/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(2, target)
             print(txt)
 
-        elif choice == 3:
+        elif choice == '3':
             print("\n")
             print("[+] DNS Lookup script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/dnslookup/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(3, target)
             print(txt)
 
-        elif choice == 4:
+        elif choice == '4':
             print("\n")
             print("[+] Reverse DNS script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/reversedns/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(4, target)
             print(txt)
 
-        elif choice == 5:
+        elif choice == '5':
             print("\n")
             print("[+] Find DNS Host script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/hostsearch/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(5, target)
             print(txt)
 
-        elif choice == 6:
+        elif choice == '6':
             print("\n")
             print("[+] Find Shared DNS script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/findshareddns/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(6, target)
             print(txt)
 
-        elif choice == 7:
+        elif choice == '7':
             print("\n")
             print("[+] Zone Transfer script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/zonetransfer/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(7, target)
             print(txt)
 
-        elif choice == 8:
+        elif choice == '8':
             print("\n")
             print("[+] Whois Lookup script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/whois/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(8, target)
             print(txt)
 
-        elif choice == 9:
+        elif choice == '9':
             print("\n")
             print("[+] IP Location Lookup script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/geoip/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(9, target)
             print(txt)
 
-        elif choice == 10:
+        elif choice == '10':
             print("\n")
             print("[+] Reverse IP Lookup script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/reverseiplookup/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(10, target)
             print(txt)
 
-        elif choice == 11:
+        elif choice == '11':
             print("\n")
             print("[+] TCP Port Scan script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/nmap/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(11, target)
             print(txt)
 
-        elif choice == 12:
+        elif choice == '12':
             print("\n")
             print("[+] Subnet Lookup script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/subnetcalc/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(12, target)
             print(txt)
 
-        elif choice == 13:
+        elif choice == '13':
             print("\n")
             print("[+] HTTP Header Check script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/httpheaders/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(13, target)
             print(txt)
 
-        elif choice == 14:
+        elif choice == '14':
             print("\n")
             print("[+] Extract Page Links script running..")
-            target = raw_input("[+] Target : ")
+            target = input("[+] Target : ")
             print("\n")
-            url = "https://api.hackertarget.com/pagelinks/?q=" + target
-            request = requests.get(url)
-            txt = request.text
+            txt = hackertarget_api.hackertarget_api(14, target)
             print(txt)
 
-        elif choice == 15:
+        elif choice == '15':
             exit()
 
     except KeyboardInterrupt:
         print("\nAborted!")
         quit()
     except:
-        print("Invalid Optioin !\n")
+        print("Invalid Option !\n")
         return run()
 run()
