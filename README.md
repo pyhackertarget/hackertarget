@@ -10,22 +10,32 @@ Thank you for your support at !
 
 ##### How do you run it?
 
+## Clone with HTTPS
 ```
 git clone https://github.com/ismailtasdelen/hackertarget.git
 cd hackertarget/
-python hackertarget.py
 ```
- 
- ##### View :
- 
+## Run pip3 install to set up this script
 ```
-root@ismailtasdelen:~# python hackertarget.py 
+pip3 install .
+```
 
-  _               _              _                          _   
- | |_   __ _  __ | |__ ___  _ _ | |_  __ _  _ _  __ _  ___ | |_ 
+## Run hackertarget CLI script via following command
+```
+python hackertarget.py
+
+```
+
+ ##### View :
+
+```
+root@ismailtasdelen:~# python hackertarget.py
+
+  _               _              _                          _
+ | |_   __ _  __ | |__ ___  _ _ | |_  __ _  _ _  __ _  ___ | |_
  | ' \ / _` |/ _|| / // -_)| '_||  _|/ _` || '_|/ _` |/ -_)|  _|
  |_||_|\__,_|\__||_\_\___||_|   \__|\__,_||_|  \__, |\___| \__|
-                                                |___/           
+                                                |___/
 		         Ismail Tasdelen
  | github.com/ismailtasdelen | linkedin.com/in/ismailtasdelen |
 
@@ -46,7 +56,7 @@ root@ismailtasdelen:~# python hackertarget.py
 [14] Extract Page Links
 [15] Exit
 
-Which option number : 
+Which option number :
 ```
 
 ##### Menu :
