@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from source import hackertarget_api
+import time
 
 hackertarget_logo = """
   _               _              _                          _
@@ -28,7 +29,8 @@ menu = """
 [12] Subnet Lookup
 [13] HTTP Header Check
 [14] Extract Page Links
-[15] Exit
+[15] Version
+[16] Exit
 """
 
 print(hackertarget_logo)
@@ -150,8 +152,16 @@ def run():
             print("\n")
             txt = hackertarget_api.hackertarget_api(14, target)
             print(txt)
-
+            
         elif choice == '15':
+            print("\n")
+            print("[+] Version Checking..")
+            time.sleep(2)
+            version_number = "2.0"
+            time.sleep(3)
+            print("[+] Version : " + version_number)
+
+        elif choice == '16':
             exit()
 
     except KeyboardInterrupt:
