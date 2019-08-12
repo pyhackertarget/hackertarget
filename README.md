@@ -54,7 +54,8 @@ root@ismailtasdelen:~# python hackertarget.py
 [12] Subnet Lookup
 [13] HTTP Header Check
 [14] Extract Page Links
-[15] Exit
+[15] Version
+[16] Exit
 
 Which option number :
 ```
@@ -75,7 +76,8 @@ Which option number :
 * [12] Subnet Lookup
 * [13] HTTP Header Check
 * [14] Extract Page Links
-* [15] Exit
+* [15] Version
+* [16] Exit
 
 ##### Cloning an Existing Repository ( Clone with HTTPS )
 ```
