@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="/image/hackertarget.png">
-  <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg">
+  <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"> <img src="https://img.shields.io/github/stars/pyhackertarget/hackertarget?style=social"> <img src="https://img.shields.io/github/forks/pyhackertarget/hackertarget?style=social"> <img src="https://img.shields.io/github/repo-size/pyhackertarget/hackertarget"> <img src="https://img.shields.io/github/license/pyhackertarget/hackertarget"> <img src="https://img.shields.io/github/issues/detail/author/pyhackertarget/hackertarget/3">
 </p>
 
 Use open source tools and network intelligence to help organizations with attack surface discovery and identification of security vulnerabilities. Identification of an organizations vulnerabilities is an impossible task without tactical intelligence on the network footprint. By combining open source intelligence with the worlds best open source security scanning tools, we enable your attack surface discovery. With the ability for Internet assets to be deployed in seconds, the attack surface is more dynamic and ever growing. This very fact makes mapping your external network footprint a hard problem. We aim to provide solutions to solve this problem. Start with our tools for domain and IP address data, then pivot to mapping the exposure with hosted open source scanners. We have developed a linux terminal tool using python programming language through an api which we received from ! <b> This tool is not a HackerTarget tool. It is a non-original tool. </b>
