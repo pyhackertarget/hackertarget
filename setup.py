@@ -11,6 +11,6 @@ setup(name='hackertarget',
       author_email='pentestdatabase@gmail.com',
       license='MIT',
       packages=['source'],
-      install_requires=['requests==2.21.0'],
+      install_requires=['requests==2.31.0'],
       python_requires=">=3",
       zip_safe=False)
