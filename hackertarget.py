@@ -1,4 +1,6 @@
-#!/usr/bin/env python
+
+ReferralServer:  whois://whois.afrinic.net
+ResourceLink:  http://afrinic.net/en/services/whois-quer#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 from source import hackertarget_api
