@@ -1,6 +1,30 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-157.230.161.221
+Location:
 
+United States (US),
+N/A
+Region:
+California (5332921)
+City:
+Santa Clara
+ZIP:
+95051
+Hostname:
+do.markupgrade.com → 157.230.161.221
+IP range:
+157.230.128.0 - 157.230.191.255
+ISP:
+Digital Ocean
+Organization:
+Digital Ocean
+Property 	Format 	Description
+success 	Boolean 	true if the API request was successful, false if otherwise.
+approved_senders 	Array 	Approved senders that match given criteria
+total 	Integer 	Total count of approved senders that match given criteria
+pagination 	String 	Human readable pagination details
+total_pages 	Integer 	Total number of pages
+links 	Array 	An array containing links to the first page, last page, next page, and previous page of records ("next" and "previous" will only appear in the array when they are applicable). These URLs are also available in the return headers. 
 import requests
 
 def hackertarget_api(choice, target):
